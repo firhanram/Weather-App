@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/widgets/DetailWeatherList/DetailWeatherList.dart';
+import 'package:weather_app/widgets/EstimateWeatherList/EstimateWeatherList.dart';
 import 'package:weather_app/widgets/MainWeather.dart';
 
 void main() {
@@ -33,7 +34,11 @@ class MyHomePage extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.all(12),
         child: Column(
-          children: <Widget>[MainWeather(), DetailWeatherList()],
+          children: <Widget>[
+            MainWeather(),
+            DetailWeatherList(),
+            EstimateWeatherList()
+          ],
         ),
       ),
     );
