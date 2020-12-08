@@ -6,6 +6,9 @@ class EstimateWeather {
   final String weatherType;
   final String temperature;
 
-  EstimateWeather(@required this.day, @required this.weatherIcon,
-      @required this.weatherType, @required this.temperature);
+  EstimateWeather(
+      {@required this.day,
+      @required this.weatherIcon,
+      @required this.weatherType,
+      @required this.temperature});
 }

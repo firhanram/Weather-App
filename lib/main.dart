@@ -31,14 +31,16 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 3,
       ),
-      body: Container(
-        padding: EdgeInsets.all(12),
-        child: Column(
-          children: <Widget>[
-            MainWeather(),
-            DetailWeatherList(),
-            EstimateWeatherList()
-          ],
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.all(12),
+          child: Column(
+            children: <Widget>[
+              MainWeather(),
+              DetailWeatherList(),
+              EstimateWeatherList()
+            ],
+          ),
         ),
       ),
     );
